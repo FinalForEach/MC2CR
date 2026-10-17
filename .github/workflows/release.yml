@@ -1,0 +1,185 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_type:
+        description: 'Version bump level'
+        required: true
+        type: choice
+        default: 'patch'
+        options:
+          - patch
+          - minor
+          - major
+      custom_version:
+        description: 'Optional explicit version (e.g. 0.2.0, overrides bump level)'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  prepare-release:
+    name: Bump Version & Tag
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.bump.outputs.version }}
+      tag: v${{ steps.bump.outputs.version }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Calculate & apply version bump
+        id: bump
+        run: |
+          python - << 'EOF'
+          import os, re, sys
+
+          custom = os.environ.get("CUSTOM_VERSION", "").strip().lstrip("v")
+          bump_type = os.environ.get("BUMP_TYPE", "patch")
+
+          with open("pyproject.toml", "r", encoding="utf-8") as f:
+              pyproject = f.read()
+
+          m = re.search(r'version\s*=\s*"([^"]+)"', pyproject)
+          current_ver = m.group(1)
+
+          if custom:
+              new_ver = custom
+          else:
+              parts = [int(p) for p in current_ver.split(".")]
+              while len(parts) < 3:
+                  parts.append(0)
+              if bump_type == "major":
+                  new_ver = f"{parts[0] + 1}.0.0"
+              elif bump_type == "minor":
+                  new_ver = f"{parts[0]}.{parts[1] + 1}.0"
+              else:
+                  new_ver = f"{parts[0]}.{parts[1]}.{parts[2] + 1}"
+
+          # Update pyproject.toml
+          new_pyproject = re.sub(r'version\s*=\s*"[^"]+"', f'version = "{new_ver}"', pyproject, count=1)
+          with open("pyproject.toml", "w", encoding="utf-8") as f:
+              f.write(new_pyproject)
+
+          # Update src/mc2cr/__init__.py
+          with open("src/mc2cr/__init__.py", "r", encoding="utf-8") as f:
+              init_content = f.read()
+          new_init = re.sub(r'__version__\s*=\s*"[^"]+"', f'__version__ = "{new_ver}"', init_content, count=1)
+          with open("src/mc2cr/__init__.py", "w", encoding="utf-8") as f:
+              f.write(new_init)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"version={new_ver}\n")
+          print(f"Bumped version from {current_ver} to {new_ver}")
+          EOF
+        env:
+          BUMP_TYPE: ${{ github.event.inputs.bump_type }}
+          CUSTOM_VERSION: ${{ github.event.inputs.custom_version }}
+
+      - name: Commit and push tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore(release): bump version to v${{ steps.bump.outputs.version }}"
+          git tag "v${{ steps.bump.outputs.version }}"
+          git push origin HEAD:${{ github.ref_name }}
+          git push origin "v${{ steps.bump.outputs.version }}"
+
+  build-binaries:
+    name: Build (${{ matrix.os }})
+    needs: prepare-release
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            artifact_name: MC2CR-linux
+            src_binary: dist/MC2CR
+            dest_binary: dist/MC2CR-linux
+          - os: windows-latest
+            artifact_name: MC2CR-windows.exe
+            src_binary: dist/MC2CR.exe
+            dest_binary: dist/MC2CR-windows.exe
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code at tag
+        uses: actions/checkout@v4
+        with:
+          ref: v${{ needs.prepare-release.outputs.version }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -e ".[build]"
+
+      - name: Build Standalone Executable
+        run: python packaging/build_executable.py
+
+      - name: Prepare binary artifact
+        shell: bash
+        run: |
+          if [ "${{ runner.os }}" = "Linux" ]; then
+            chmod +x "${{ matrix.src_binary }}"
+          fi
+          mv "${{ matrix.src_binary }}" "${{ matrix.dest_binary }}"
+
+      - name: Upload temporary workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact_name }}
+          path: ${{ matrix.dest_binary }}
+          retention-days: 1
+
+  publish-and-cleanup:
+    name: Publish Release & Clean Artifacts
+    needs: [prepare-release, build-binaries]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v${{ needs.prepare-release.outputs.version }}
+
+      - name: Download all build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+
+      - name: Create GitHub Release with assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "v${{ needs.prepare-release.outputs.version }}" release-assets/* \
+            --title "Release v${{ needs.prepare-release.outputs.version }}" \
+            --generate-notes
+
+      - name: Delete temporary workflow run artifacts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Deleting intermediate workflow artifacts..."
+          gh api -X GET "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+            --jq '.artifacts[].id' | while read -r art_id; do
+              if [ -n "$art_id" ]; then
+                echo "Deleting artifact ID: $art_id"
+                gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$art_id"
+              fi
+            done
+          echo "All intermediate artifacts successfully deleted."

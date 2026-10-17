@@ -55,29 +55,6 @@ CLI options:
 
 ---
 
-## Python Library Usage
-
-MC2CR can be imported and used programmatically:
-
-```python
-from mc2cr import convert_mc_world, get_default_mc_saves_dir, get_default_cr_saves_dir, scan_mc_worlds
-
-# Discover Minecraft worlds
-mc_saves = get_default_mc_saves_dir()
-worlds = scan_mc_worlds(mc_saves)
-for w in worlds:
-    print(f"Found world: {w.display_label}")
-
-# Convert a world
-stats = convert_mc_world(
-    input_world=mc_saves / "MyWorld",
-    output_world=get_default_cr_saves_dir() / "MyWorld_CR",
-    y_offset=-64,
-)
-print(f"Converted {stats['cr_chunks_generated']} Cosmic Reach chunks in {stats['elapsed_seconds']:.2f}s!")
-```
-
----
 
 ## Building a Standalone Executable
 
