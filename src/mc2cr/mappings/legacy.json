@@ -1,0 +1,2001 @@
+{
+  "0": {
+    "name": "Air",
+    "target": "base:air[default]",
+    "modern": "minecraft:air"
+  },
+  "1": {
+    "name": "Stone",
+    "target": "base:stone_basalt[default]",
+    "modern": "minecraft:stone",
+    "data_modern": {
+      "0": "minecraft:stone",
+      "1": "minecraft:granite",
+      "2": "minecraft:polished_granite",
+      "3": "minecraft:diorite",
+      "4": "minecraft:polished_diorite",
+      "5": "minecraft:andesite",
+      "6": "minecraft:polished_andesite"
+    }
+  },
+  "2": {
+    "name": "Grass Block",
+    "target": "base:grass[default]",
+    "modern": "minecraft:grass_block"
+  },
+  "3": {
+    "name": "Dirt",
+    "target": "base:dirt[default]",
+    "modern": "minecraft:dirt",
+    "data_modern": {
+      "0": "minecraft:dirt",
+      "1": "minecraft:coarse_dirt",
+      "2": "minecraft:podzol"
+    }
+  },
+  "4": {
+    "name": "Cobblestone",
+    "target": "base:cobblestone_basalt[default]",
+    "modern": "minecraft:cobblestone"
+  },
+  "5": {
+    "name": "Wooden Planks",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:oak_planks",
+    "data_modern": {
+      "0": "minecraft:oak_planks",
+      "1": "minecraft:spruce_planks",
+      "2": "minecraft:birch_planks",
+      "3": "minecraft:jungle_planks"
+    }
+  },
+  "6": {
+    "name": "Sapling",
+    "target": "base:sapling_poplar[default]",
+    "modern": "minecraft:oak_sapling",
+    "data_modern": {
+      "0": "minecraft:oak_sapling",
+      "1": "minecraft:spruce_sapling",
+      "2": "minecraft:birch_sapling",
+      "3": "minecraft:jungle_sapling"
+    }
+  },
+  "7": {
+    "name": "Bedrock",
+    "target": "base:stone_komatiite[default]",
+    "modern": "minecraft:bedrock"
+  },
+  "8": {
+    "name": "Water (Flowing)",
+    "target": "base:water[default]",
+    "modern": "minecraft:water"
+  },
+  "9": {
+    "name": "Water (Still)",
+    "target": "base:water[default]",
+    "modern": "minecraft:water"
+  },
+  "10": {
+    "name": "Lava (Flowing)",
+    "target": "base:lava[type=flow,level=0]",
+    "modern": "minecraft:lava"
+  },
+  "11": {
+    "name": "Lava (Still)",
+    "target": "base:lava[type=source]",
+    "modern": "minecraft:lava"
+  },
+  "12": {
+    "name": "Sand",
+    "target": "base:sand[default]",
+    "modern": "minecraft:sand",
+    "data_modern": {
+      "0": "minecraft:sand",
+      "1": "minecraft:red_sand"
+    }
+  },
+  "13": {
+    "name": "Gravel",
+    "target": "base:stone_gravel[default]",
+    "modern": "minecraft:gravel"
+  },
+  "14": {
+    "name": "Gold Ore",
+    "target": "base:ore_gold[default]",
+    "modern": "minecraft:gold_ore"
+  },
+  "15": {
+    "name": "Iron Ore",
+    "target": "base:ore_iron[default]",
+    "modern": "minecraft:iron_ore"
+  },
+  "16": {
+    "name": "Coal Ore",
+    "target": "base:coal[default]",
+    "modern": "minecraft:coal_ore"
+  },
+  "17": {
+    "name": "Wood Log",
+    "target": "base:tree_log[default]",
+    "modern": "minecraft:oak_log",
+    "data_modern": {
+      "0": "minecraft:oak_log",
+      "1": "minecraft:spruce_log",
+      "2": "minecraft:birch_log",
+      "3": "minecraft:jungle_log"
+    }
+  },
+  "18": {
+    "name": "Leaves",
+    "target": "base:leaves_poplar[dist=1,type=decaying]",
+    "modern": "minecraft:oak_leaves",
+    "data_modern": {
+      "0": "minecraft:oak_leaves",
+      "1": "minecraft:spruce_leaves",
+      "2": "minecraft:birch_leaves",
+      "3": "minecraft:jungle_leaves"
+    }
+  },
+  "19": {
+    "name": "Sponge",
+    "target": "base:cheese[default]",
+    "modern": "minecraft:sponge",
+    "data_modern": {
+      "0": "minecraft:sponge",
+      "1": "minecraft:wet_sponge"
+    }
+  },
+  "20": {
+    "name": "Glass",
+    "target": "base:glass[default]",
+    "modern": "minecraft:glass"
+  },
+  "21": {
+    "name": "Lapis Lazuli Ore",
+    "target": "base:ore_sapphire[default]",
+    "modern": "minecraft:lapis_ore"
+  },
+  "22": {
+    "name": "Lapis Lazuli Block",
+    "target": "base:sapphire_block[default]",
+    "modern": "minecraft:lapis_lazuli_block"
+  },
+  "23": {
+    "name": "Dispenser",
+    "target": "base:dispenser[default]",
+    "modern": "minecraft:dispenser"
+  },
+  "24": {
+    "name": "Sandstone",
+    "target": "base:sandstone[default]",
+    "modern": "minecraft:sandstone",
+    "data_modern": {
+      "0": "minecraft:sandstone",
+      "1": "minecraft:chiseled_sandstone",
+      "2": "minecraft:cut_sandstone"
+    }
+  },
+  "25": {
+    "name": "Note Block",
+    "target": "base:boombox[default]",
+    "modern": "minecraft:note_block"
+  },
+  "26": {
+    "name": "Bed",
+    "target": "base:crate_wooden[default]",
+    "modern": "minecraft:bed"
+  },
+  "27": {
+    "name": "Powered Rail",
+    "target": "base:gold_walkway[slab_type=bottom]",
+    "modern": "minecraft:powered_rail"
+  },
+  "28": {
+    "name": "Detector Rail",
+    "target": "base:iron_walkway[slab_type=bottom]",
+    "modern": "minecraft:detector_rail"
+  },
+  "29": {
+    "name": "Sticky Piston",
+    "target": "base:piston[default]",
+    "modern": "minecraft:sticky_piston"
+  },
+  "30": {
+    "name": "Cobweb",
+    "target": "base:green_biomass[type=source]",
+    "modern": "minecraft:cobweb"
+  },
+  "31": {
+    "name": "Tall Grass",
+    "target": "base:grass_blades[default]",
+    "modern": "minecraft:grass",
+    "data_modern": {
+      "0": "minecraft:dead_bush",
+      "1": "minecraft:grass",
+      "2": "minecraft:fern"
+    }
+  },
+  "32": {
+    "name": "Dead Bush",
+    "target": "base:grass_blades_lux[default]",
+    "modern": "minecraft:dead_bush"
+  },
+  "33": {
+    "name": "Piston",
+    "target": "base:piston[default]",
+    "modern": "minecraft:piston"
+  },
+  "34": {
+    "name": "Piston Extension",
+    "target": "minecraft:piston_head[default]",
+    "modern": "minecraft:piston_extension"
+  },
+  "35": {
+    "name": "Wool",
+    "target": "base:plastic_block[color=white]",
+    "data": {
+      "0": "base:plastic_block[color=white]",
+      "1": "base:plastic_block[color=orange]",
+      "2": "base:plastic_block[color=magenta]",
+      "3": "base:plastic_block[color=azure]",
+      "4": "base:plastic_block[color=yellow]",
+      "5": "base:plastic_block[color=lime]",
+      "6": "base:plastic_block[color=rose]",
+      "7": "base:plastic_block[color=gray]",
+      "8": "base:plastic_block[color=gray]",
+      "9": "base:plastic_block[color=cyan]",
+      "10": "base:plastic_block[color=violet]",
+      "11": "base:plastic_block[color=blue]",
+      "12": "base:plastic_block[color=orange]",
+      "13": "base:plastic_block[color=green]",
+      "14": "base:plastic_block[color=red]",
+      "15": "base:plastic_block[color=black]"
+    },
+    "modern": "minecraft:white_wool",
+    "data_modern": {
+      "0": "minecraft:white_wool",
+      "1": "minecraft:orange_wool",
+      "2": "minecraft:magenta_wool",
+      "3": "minecraft:light_blue_wool",
+      "4": "minecraft:yellow_wool",
+      "5": "minecraft:lime_wool",
+      "6": "minecraft:pink_wool",
+      "7": "minecraft:gray_wool",
+      "8": "minecraft:light_gray_wool",
+      "9": "minecraft:cyan_wool",
+      "10": "minecraft:purple_wool",
+      "11": "minecraft:blue_wool",
+      "12": "minecraft:brown_wool",
+      "13": "minecraft:green_wool",
+      "14": "minecraft:red_wool",
+      "15": "minecraft:black_wool"
+    }
+  },
+  "37": {
+    "name": "Dandelion",
+    "target": "base:flower_cosmos[default]",
+    "modern": "minecraft:dandelion"
+  },
+  "38": {
+    "name": "Rose",
+    "target": "base:flower_lavender[default]",
+    "modern": "minecraft:poppy",
+    "data_modern": {
+      "0": "minecraft:poppy",
+      "1": "minecraft:blue_orchid",
+      "2": "minecraft:allium",
+      "3": "minecraft:azure_bluet",
+      "4": "minecraft:red_tulip",
+      "5": "minecraft:orange_tulip",
+      "6": "minecraft:white_tulip",
+      "7": "minecraft:pink_tulip",
+      "8": "minecraft:oxeye_daisy"
+    }
+  },
+  "39": {
+    "name": "Brown Mushroom",
+    "target": "base:luxshroom_small[color=brown]",
+    "modern": "minecraft:brown_mushroom"
+  },
+  "40": {
+    "name": "Red Mushroom",
+    "target": "base:luxshroom_small[color=purple]",
+    "modern": "minecraft:red_mushroom"
+  },
+  "41": {
+    "name": "Gold Block",
+    "target": "base:gold_block[default]",
+    "modern": "minecraft:gold_block"
+  },
+  "42": {
+    "name": "Iron Block",
+    "target": "base:metal_panel[default]",
+    "modern": "minecraft:iron_block"
+  },
+  "43": {
+    "name": "Double Stone Slab",
+    "target": "base:stone_basalt[default]",
+    "modern": "minecraft:double_stone_slab"
+  },
+  "44": {
+    "name": "Stone Slab",
+    "target": "base:stone_basalt[slab_type=bottom]",
+    "modern": "minecraft:stone_slab"
+  },
+  "45": {
+    "name": "Bricks",
+    "target": "base:bricks[default]",
+    "modern": "minecraft:bricks"
+  },
+  "46": {
+    "name": "TNT",
+    "target": "base:c4[default]",
+    "modern": "minecraft:tnt"
+  },
+  "47": {
+    "name": "Bookshelf",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:bookshelf"
+  },
+  "48": {
+    "name": "Mossy Cobblestone",
+    "target": "base:cobblestone_limestone[default]",
+    "modern": "minecraft:mossy_cobblestone"
+  },
+  "49": {
+    "name": "Obsidian",
+    "target": "base:asphalt[default]",
+    "modern": "minecraft:obsidian"
+  },
+  "50": {
+    "name": "Torch",
+    "target": "base:torch[level=4,type=ground]",
+    "data": {
+      "1": "base:torch[level=4,type=wall_NegX]",
+      "2": "base:torch[level=4,type=wall_PosX]",
+      "3": "base:torch[level=4,type=wall_NegZ]",
+      "4": "base:torch[level=4,type=wall_PosZ]",
+      "5": "base:torch[level=4,type=ground]"
+    },
+    "modern": "minecraft:torch",
+    "data_modern": {
+      "1": "minecraft:wall_torch[facing=east]",
+      "2": "minecraft:wall_torch[facing=west]",
+      "3": "minecraft:wall_torch[facing=south]",
+      "4": "minecraft:wall_torch[facing=north]",
+      "5": "minecraft:torch"
+    }
+  },
+  "51": {
+    "name": "Fire",
+    "target": "base:magma[default]",
+    "modern": "minecraft:fire"
+  },
+  "52": {
+    "name": "Monster Spawner",
+    "target": "minecraft:spawner[default]",
+    "modern": "minecraft:monster_spawner"
+  },
+  "53": {
+    "name": "Oak Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:oak_wood_stairs"
+  },
+  "54": {
+    "name": "Chest",
+    "target": "base:crate_wooden[default]",
+    "modern": "minecraft:chest"
+  },
+  "55": {
+    "name": "Redstone Wire",
+    "target": "minecraft:redstone_wire[default]",
+    "modern": "minecraft:redstone_wire"
+  },
+  "56": {
+    "name": "Diamond Ore",
+    "target": "base:ore_ruby[default]",
+    "modern": "minecraft:diamond_ore"
+  },
+  "57": {
+    "name": "Diamond Block",
+    "target": "base:ruby_block[default]",
+    "modern": "minecraft:diamond_block"
+  },
+  "58": {
+    "name": "Crafting Table",
+    "target": "base:workbench[default]",
+    "modern": "minecraft:crafting_table"
+  },
+  "59": {
+    "name": "Wheat Crops",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:wheat_crops"
+  },
+  "60": {
+    "name": "Farmland",
+    "target": "base:dirt[default]",
+    "modern": "minecraft:farmland"
+  },
+  "61": {
+    "name": "Furnace",
+    "target": "base:furnace[default]",
+    "modern": "minecraft:furnace"
+  },
+  "62": {
+    "name": "Burning Furnace",
+    "target": "base:furnace[default]",
+    "modern": "minecraft:burning_furnace"
+  },
+  "63": {
+    "name": "Sign Post",
+    "target": "minecraft:standing_sign[default]",
+    "modern": "minecraft:sign_post"
+  },
+  "64": {
+    "name": "Wooden Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:oak_door"
+  },
+  "65": {
+    "name": "Ladder",
+    "target": "base:ladder_wooden[direction=PosX]",
+    "data": {
+      "2": "base:ladder_wooden[direction=PosZ]",
+      "3": "base:ladder_wooden[direction=NegZ]",
+      "4": "base:ladder_wooden[direction=PosX]",
+      "5": "base:ladder_wooden[direction=NegX]"
+    },
+    "modern": "minecraft:ladder",
+    "data_modern": {
+      "2": "minecraft:ladder[facing=north]",
+      "3": "minecraft:ladder[facing=south]",
+      "4": "minecraft:ladder[facing=west]",
+      "5": "minecraft:ladder[facing=east]"
+    }
+  },
+  "66": {
+    "name": "Rail",
+    "target": "base:steel_walkway[slab_type=bottom]",
+    "modern": "minecraft:rail"
+  },
+  "67": {
+    "name": "Cobblestone Stairs",
+    "target": "base:cobblestone_basalt[default]",
+    "modern": "minecraft:cobblestone_stairs"
+  },
+  "68": {
+    "name": "Wall Sign",
+    "target": "minecraft:wall_sign[default]",
+    "modern": "minecraft:wall_sign"
+  },
+  "69": {
+    "name": "Lever",
+    "target": "base:laser_switch[default]",
+    "modern": "minecraft:lever"
+  },
+  "70": {
+    "name": "Stone Pressure Plate",
+    "target": "base:stone_basalt[slab_type=bottom]",
+    "modern": "minecraft:stone_pressure_plate"
+  },
+  "71": {
+    "name": "Iron Door",
+    "target": "base:door_iron[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:door_iron[direction=NegX,part=bottom,power=off]",
+      "1": "base:door_iron[direction=NegZ,part=bottom,power=off]",
+      "2": "base:door_iron[direction=PosX,part=bottom,power=off]",
+      "3": "base:door_iron[direction=PosZ,part=bottom,power=off]",
+      "4": "base:door_iron[direction=NegX,part=bottom,power=on]",
+      "5": "base:door_iron[direction=NegZ,part=bottom,power=on]",
+      "6": "base:door_iron[direction=PosX,part=bottom,power=on]",
+      "7": "base:door_iron[direction=PosZ,part=bottom,power=on]",
+      "8": "base:door_iron[direction=NegX,part=top,power=off]",
+      "9": "base:door_iron[direction=NegZ,part=top,power=off]",
+      "10": "base:door_iron[direction=PosX,part=top,power=off]",
+      "11": "base:door_iron[direction=PosZ,part=top,power=off]",
+      "12": "base:door_iron[direction=NegX,part=top,power=on]",
+      "13": "base:door_iron[direction=NegZ,part=top,power=on]",
+      "14": "base:door_iron[direction=PosX,part=top,power=on]",
+      "15": "base:door_iron[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:iron_door"
+  },
+  "72": {
+    "name": "Wooden Pressure Plate",
+    "target": "base:wood_planks[slab_type=bottom]",
+    "modern": "minecraft:wooden_pressure_plate"
+  },
+  "73": {
+    "name": "Redstone Ore",
+    "target": "base:ore_sulfur[default]",
+    "modern": "minecraft:redstone_ore"
+  },
+  "74": {
+    "name": "Glowing Redstone Ore",
+    "target": "base:ore_sulfur[default]",
+    "modern": "minecraft:glowing_redstone_ore"
+  },
+  "75": {
+    "name": "Redstone Torch (off)",
+    "target": "minecraft:unlit_redstone_torch[default]",
+    "modern": "minecraft:redstone_torch_off"
+  },
+  "76": {
+    "name": "Redstone Torch (on)",
+    "target": "base:torch[default]",
+    "modern": "minecraft:redstone_torch_on"
+  },
+  "77": {
+    "name": "Stone Button",
+    "target": "minecraft:stone_button[default]",
+    "modern": "minecraft:stone_button"
+  },
+  "78": {
+    "name": "Snow Layer",
+    "target": "base:snow[slab_type=bottom]",
+    "modern": "minecraft:snow_layer"
+  },
+  "79": {
+    "name": "Ice",
+    "target": "base:ice[default]",
+    "modern": "minecraft:ice"
+  },
+  "80": {
+    "name": "Snow Block",
+    "target": "base:snow[default]",
+    "modern": "minecraft:snow_block"
+  },
+  "81": {
+    "name": "Cactus",
+    "target": "base:grass_lux[type=full]",
+    "modern": "minecraft:cactus"
+  },
+  "82": {
+    "name": "Clay",
+    "target": "base:clay[default]",
+    "modern": "minecraft:clay"
+  },
+  "83": {
+    "name": "Sugar Cane",
+    "target": "base:leaves[type=permament]",
+    "modern": "minecraft:sugar_cane"
+  },
+  "84": {
+    "name": "Jukebox",
+    "target": "base:boombox[default]",
+    "modern": "minecraft:jukebox"
+  },
+  "85": {
+    "name": "Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:oak_fence"
+  },
+  "86": {
+    "name": "Pumpkin",
+    "target": "base:luminous_fruit[type=orange]",
+    "modern": "minecraft:pumpkin"
+  },
+  "87": {
+    "name": "Netherrack",
+    "target": "base:stone_komatiite[default]",
+    "modern": "minecraft:netherrack"
+  },
+  "88": {
+    "name": "Soul Sand",
+    "target": "base:stone_shale[default]",
+    "modern": "minecraft:soul_sand"
+  },
+  "89": {
+    "name": "Glowstone",
+    "target": "base:light[power=on,lightRed=13,lightGreen=7,lightBlue=0]",
+    "modern": "minecraft:glowstone"
+  },
+  "90": {
+    "name": "Nether Portal",
+    "target": "minecraft:portal[default]",
+    "modern": "minecraft:nether_portal"
+  },
+  "91": {
+    "name": "Jack-o'-Lantern",
+    "target": "base:light[default]",
+    "modern": "minecraft:jack_o'_lantern"
+  },
+  "92": {
+    "name": "Cake Block",
+    "target": "base:cheese[default]",
+    "modern": "minecraft:cake_block"
+  },
+  "93": {
+    "name": "Redstone Repeater (off)",
+    "target": "minecraft:unpowered_repeater[default]",
+    "modern": "minecraft:redstone_repeater_off"
+  },
+  "94": {
+    "name": "Redstone Repeater (on)",
+    "target": "minecraft:powered_repeater[default]",
+    "modern": "minecraft:redstone_repeater_on"
+  },
+  "95": {
+    "name": "Locked Chest",
+    "target": "base:cardboard_box[default]",
+    "modern": "minecraft:white_stained_glass",
+    "data_modern": {
+      "0": "minecraft:white_stained_glass",
+      "1": "minecraft:orange_stained_glass",
+      "2": "minecraft:magenta_stained_glass",
+      "3": "minecraft:light_blue_stained_glass",
+      "4": "minecraft:yellow_stained_glass",
+      "5": "minecraft:lime_stained_glass",
+      "6": "minecraft:pink_stained_glass",
+      "7": "minecraft:gray_stained_glass",
+      "8": "minecraft:light_gray_stained_glass",
+      "9": "minecraft:cyan_stained_glass",
+      "10": "minecraft:purple_stained_glass",
+      "11": "minecraft:blue_stained_glass",
+      "12": "minecraft:brown_stained_glass",
+      "13": "minecraft:green_stained_glass",
+      "14": "minecraft:red_stained_glass",
+      "15": "minecraft:black_stained_glass"
+    }
+  },
+  "96": {
+    "name": "Trapdoor",
+    "target": "minecraft:trapdoor[default]",
+    "modern": "minecraft:trapdoor"
+  },
+  "97": {
+    "name": "Monster Egg",
+    "target": "base:stone_basalt[default]",
+    "modern": "minecraft:monster_egg"
+  },
+  "98": {
+    "name": "Stone Bricks",
+    "target": "base:stone_bricks[default]",
+    "modern": "minecraft:stone_bricks"
+  },
+  "99": {
+    "name": "Huge Brown Mushroom",
+    "target": "base:luxshroom_big[color=brown,type=canopy]",
+    "data": {
+      "0": "base:luxshroom_big[type=stem]",
+      "10": "base:luxshroom_big[type=stem]",
+      "15": "base:luxshroom_big[type=stem]"
+    },
+    "modern": "minecraft:huge_brown_mushroom"
+  },
+  "100": {
+    "name": "Huge Red Mushroom",
+    "target": "base:luxshroom_big[color=purple,type=canopy]",
+    "data": {
+      "0": "base:luxshroom_big[type=stem]",
+      "10": "base:luxshroom_big[type=stem]",
+      "15": "base:luxshroom_big[type=stem]"
+    },
+    "modern": "minecraft:huge_red_mushroom"
+  },
+  "101": {
+    "name": "Iron Bars",
+    "target": "base:steel_walkway[default]",
+    "modern": "minecraft:iron_bars"
+  },
+  "102": {
+    "name": "Glass Pane",
+    "target": "base:glass[default]",
+    "modern": "minecraft:glass_pane"
+  },
+  "103": {
+    "name": "Melon Block",
+    "target": "base:luminous_fruit[type=green]",
+    "modern": "minecraft:melon_block"
+  },
+  "104": {
+    "name": "Pumpkin Stem",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:pumpkin_stem"
+  },
+  "105": {
+    "name": "Melon Stem",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:melon_stem"
+  },
+  "106": {
+    "name": "Vines",
+    "target": "base:leaves_poplar[dist=1,type=decaying]",
+    "modern": "minecraft:vine"
+  },
+  "107": {
+    "name": "Fence Gate",
+    "target": "minecraft:fence_gate[default]",
+    "modern": "minecraft:fence_gate"
+  },
+  "108": {
+    "name": "Brick Stairs",
+    "target": "base:bricks[default]",
+    "modern": "minecraft:brick_stairs"
+  },
+  "109": {
+    "name": "Stone Brick Stairs",
+    "target": "base:stone_bricks[default]",
+    "modern": "minecraft:stone_brick_stairs"
+  },
+  "110": {
+    "name": "Mycelium",
+    "target": "base:luxshroom_big[color=blue,type=canopy]",
+    "modern": "minecraft:mycelium"
+  },
+  "111": {
+    "name": "Lily Pad",
+    "target": "base:leaves_fir[type=stable,slab_type=bottom]",
+    "modern": "minecraft:lily_pad"
+  },
+  "112": {
+    "name": "Nether Brick",
+    "target": "base:stone_komatiite[type=bricks]",
+    "modern": "minecraft:nether_bricks"
+  },
+  "113": {
+    "name": "Nether Brick Fence",
+    "target": "base:stone_komatiite[type=bricks]",
+    "modern": "minecraft:nether_brick_fence"
+  },
+  "114": {
+    "name": "Nether Brick Stairs",
+    "target": "base:stone_komatiite[type=bricks]",
+    "modern": "minecraft:nether_brick_stairs"
+  },
+  "115": {
+    "name": "Nether Wart",
+    "target": "minecraft:nether_wart[default]",
+    "modern": "minecraft:nether_wart"
+  },
+  "116": {
+    "name": "Enchantment Table",
+    "target": "minecraft:enchanting_table[default]",
+    "modern": "minecraft:enchantment_table"
+  },
+  "117": {
+    "name": "Brewing Stand",
+    "target": "minecraft:brewing_stand[default]",
+    "modern": "minecraft:brewing_stand"
+  },
+  "118": {
+    "name": "Cauldron",
+    "target": "minecraft:cauldron[default]",
+    "modern": "minecraft:cauldron"
+  },
+  "119": {
+    "name": "End Portal",
+    "target": "minecraft:end_portal[default]",
+    "modern": "minecraft:end_portal"
+  },
+  "120": {
+    "name": "End Portal Frame",
+    "target": "minecraft:end_portal_frame[default]",
+    "modern": "minecraft:end_portal_frame"
+  },
+  "121": {
+    "name": "End Stone",
+    "target": "base:lunar_soil[default]",
+    "modern": "minecraft:end_stone"
+  },
+  "122": {
+    "name": "Dragon Egg",
+    "target": "minecraft:dragon_egg[default]",
+    "modern": "minecraft:dragon_egg"
+  },
+  "123": {
+    "name": "Redstone Lamp (Inactive)",
+    "target": "base:light[default]",
+    "modern": "minecraft:redstone_lamp"
+  },
+  "124": {
+    "name": "Redstone Lamp (Active)",
+    "target": "base:light[default]",
+    "modern": "minecraft:redstone_lamp"
+  },
+  "125": {
+    "name": "Wooden Double Slab",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:wooden_double_slab"
+  },
+  "126": {
+    "name": "Wooden Slab",
+    "target": "base:wood_planks[slab_type=bottom]",
+    "modern": "minecraft:wooden_slab"
+  },
+  "127": {
+    "name": "Cocoa",
+    "target": "base:sapling_poplar[default]",
+    "modern": "minecraft:cocoa"
+  },
+  "128": {
+    "name": "Sandstone Stairs",
+    "target": "base:sandstone[default]",
+    "modern": "minecraft:sandstone_stairs"
+  },
+  "129": {
+    "name": "Emerald Ore",
+    "target": "base:ore_sapphire[default]",
+    "modern": "minecraft:emerald_ore"
+  },
+  "130": {
+    "name": "Ender Chest",
+    "target": "base:crate[default]",
+    "modern": "minecraft:ender_chest"
+  },
+  "131": {
+    "name": "Tripwire Hook",
+    "target": "base:laser_switch[default]",
+    "modern": "minecraft:tripwire_hook"
+  },
+  "132": {
+    "name": "Tripwire",
+    "target": "base:steel_walkway[slab_type=bottom]",
+    "modern": "minecraft:tripwire"
+  },
+  "133": {
+    "name": "Emerald Block",
+    "target": "base:sapphire_block[default]",
+    "modern": "minecraft:emerald_block"
+  },
+  "134": {
+    "name": "Spruce Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:spruce_wood_stairs"
+  },
+  "135": {
+    "name": "Birch Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:birch_wood_stairs"
+  },
+  "136": {
+    "name": "Jungle Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:jungle_wood_stairs"
+  },
+  "137": {
+    "name": "Command Block",
+    "target": "base:metal_panel[default]",
+    "modern": "minecraft:command_block"
+  },
+  "138": {
+    "name": "Beacon",
+    "target": "base:light[default]",
+    "modern": "minecraft:beacon"
+  },
+  "139": {
+    "name": "Cobblestone Wall",
+    "target": "base:cobblestone_basalt[default]",
+    "modern": "minecraft:cobblestone_wall"
+  },
+  "140": {
+    "name": "Flower Pot",
+    "target": "base:sapling_poplar[default]",
+    "modern": "minecraft:flower_pot"
+  },
+  "141": {
+    "name": "Carrots",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:carrots"
+  },
+  "142": {
+    "name": "Potatoes",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:potatoes"
+  },
+  "143": {
+    "name": "Wooden Button",
+    "target": "base:laser_switch[default]",
+    "modern": "minecraft:wooden_button"
+  },
+  "144": {
+    "name": "Mob Head",
+    "target": "base:cardboard_box[default]",
+    "modern": "minecraft:mob_head"
+  },
+  "145": {
+    "name": "Anvil",
+    "target": "base:metal_panel[default]",
+    "modern": "minecraft:anvil"
+  },
+  "146": {
+    "name": "Trapped Chest",
+    "target": "base:crate[default]",
+    "modern": "minecraft:trapped_chest"
+  },
+  "147": {
+    "name": "Weighted Pressure Plate (Light)",
+    "target": "base:gold_block[slab_type=bottom]",
+    "modern": "minecraft:weighted_pressure_plate_light"
+  },
+  "148": {
+    "name": "Weighted Pressure Plate (Heavy)",
+    "target": "base:metal_panel[slab_type=bottom]",
+    "modern": "minecraft:weighted_pressure_plate_heavy"
+  },
+  "149": {
+    "name": "Redstone Comparator (Inactive)",
+    "target": "base:laser_switch[default]",
+    "modern": "minecraft:redstone_comparator"
+  },
+  "150": {
+    "name": "Redstone Comparator (Active)",
+    "target": "base:laser_switch[default]",
+    "modern": "minecraft:redstone_comparator"
+  },
+  "151": {
+    "name": "Daylight Detector",
+    "target": "base:solar_panel[default]",
+    "modern": "minecraft:daylight_detector"
+  },
+  "152": {
+    "name": "Redstone Block",
+    "target": "base:magma[default]",
+    "modern": "minecraft:redstone_block"
+  },
+  "153": {
+    "name": "Nether Quartz Ore",
+    "target": "base:ore_bauxite[default]",
+    "modern": "minecraft:nether_quartz_ore"
+  },
+  "154": {
+    "name": "Hopper",
+    "target": "base:chute[direction=NegZ]",
+    "modern": "minecraft:hopper"
+  },
+  "155": {
+    "name": "Quartz Block",
+    "target": "base:stone_limestone[default]",
+    "modern": "minecraft:quartz_block"
+  },
+  "156": {
+    "name": "Quartz Stairs",
+    "target": "base:stone_limestone[default]",
+    "modern": "minecraft:quartz_stairs"
+  },
+  "157": {
+    "name": "Activator Rail",
+    "target": "base:gold_walkway[slab_type=bottom]",
+    "modern": "minecraft:activator_rail"
+  },
+  "158": {
+    "name": "Dropper",
+    "target": "base:chute[direction=NegZ]",
+    "modern": "minecraft:dropper"
+  },
+  "159": {
+    "name": "Stained Clay",
+    "target": "base:plastic_block[default]",
+    "modern": "minecraft:white_terracotta",
+    "data_modern": {
+      "0": "minecraft:white_terracotta",
+      "1": "minecraft:orange_terracotta",
+      "2": "minecraft:magenta_terracotta",
+      "3": "minecraft:light_blue_terracotta",
+      "4": "minecraft:yellow_terracotta",
+      "5": "minecraft:lime_terracotta",
+      "6": "minecraft:pink_terracotta",
+      "7": "minecraft:gray_terracotta",
+      "8": "minecraft:light_gray_terracotta",
+      "9": "minecraft:cyan_terracotta",
+      "10": "minecraft:purple_terracotta",
+      "11": "minecraft:blue_terracotta",
+      "12": "minecraft:brown_terracotta",
+      "13": "minecraft:green_terracotta",
+      "14": "minecraft:red_terracotta",
+      "15": "minecraft:black_terracotta"
+    }
+  },
+  "160": {
+    "name": "Stained Glass Pane",
+    "target": "base:glass[default]",
+    "modern": "minecraft:white_stained_glass_pane",
+    "data_modern": {
+      "0": "minecraft:white_stained_glass_pane",
+      "1": "minecraft:orange_stained_glass_pane",
+      "2": "minecraft:magenta_stained_glass_pane",
+      "3": "minecraft:light_blue_stained_glass_pane",
+      "4": "minecraft:yellow_stained_glass_pane",
+      "5": "minecraft:lime_stained_glass_pane",
+      "6": "minecraft:pink_stained_glass_pane",
+      "7": "minecraft:gray_stained_glass_pane",
+      "8": "minecraft:light_gray_stained_glass_pane",
+      "9": "minecraft:cyan_stained_glass_pane",
+      "10": "minecraft:purple_stained_glass_pane",
+      "11": "minecraft:blue_stained_glass_pane",
+      "12": "minecraft:brown_stained_glass_pane",
+      "13": "minecraft:green_stained_glass_pane",
+      "14": "minecraft:red_stained_glass_pane",
+      "15": "minecraft:black_stained_glass_pane"
+    }
+  },
+  "161": {
+    "name": "Leaves (Acacia / Dark Oak)",
+    "target": "base:leaves_poplar[dist=1,type=decaying]",
+    "modern": "minecraft:acacia_leaves",
+    "data_modern": {
+      "0": "minecraft:acacia_leaves",
+      "1": "minecraft:dark_oak_leaves"
+    }
+  },
+  "162": {
+    "name": "Wood (Acacia / Dark Oak)",
+    "target": "base:tree_log[axis=Y]",
+    "modern": "minecraft:acacia_log",
+    "data_modern": {
+      "0": "minecraft:acacia_log",
+      "1": "minecraft:dark_oak_log"
+    }
+  },
+  "163": {
+    "name": "Acacia Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:acacia_wood_stairs"
+  },
+  "164": {
+    "name": "Dark Oak Wood Stairs",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:dark_oak_wood_stairs"
+  },
+  "165": {
+    "name": "Slime Block",
+    "target": "base:green_biomass[type=source]",
+    "modern": "minecraft:slime_block"
+  },
+  "166": {
+    "name": "Barrier",
+    "target": "base:air[default]",
+    "modern": "minecraft:barrier"
+  },
+  "167": {
+    "name": "Iron Trapdoor",
+    "target": "base:steel_walkway[slab_type=bottom]",
+    "modern": "minecraft:iron_trapdoor"
+  },
+  "168": {
+    "name": "Prismarine",
+    "target": "base:stone_limestone[default]",
+    "modern": "minecraft:prismarine"
+  },
+  "169": {
+    "name": "Sea Lantern",
+    "target": "base:light[default]",
+    "modern": "minecraft:sea_lantern"
+  },
+  "170": {
+    "name": "Hay Bale",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:hay_bale"
+  },
+  "171": {
+    "name": "Carpet",
+    "target": "base:plastic_block[slab_type=bottom]",
+    "modern": "minecraft:white_carpet",
+    "data_modern": {
+      "0": "minecraft:white_carpet",
+      "1": "minecraft:orange_carpet",
+      "2": "minecraft:magenta_carpet",
+      "3": "minecraft:light_blue_carpet",
+      "4": "minecraft:yellow_carpet",
+      "5": "minecraft:lime_carpet",
+      "6": "minecraft:pink_carpet",
+      "7": "minecraft:gray_carpet",
+      "8": "minecraft:light_gray_carpet",
+      "9": "minecraft:cyan_carpet",
+      "10": "minecraft:purple_carpet",
+      "11": "minecraft:blue_carpet",
+      "12": "minecraft:brown_carpet",
+      "13": "minecraft:green_carpet",
+      "14": "minecraft:red_carpet",
+      "15": "minecraft:black_carpet"
+    }
+  },
+  "172": {
+    "name": "Hardened Clay",
+    "target": "base:stone_limestone[default]",
+    "modern": "minecraft:hardened_clay"
+  },
+  "173": {
+    "name": "Block of Coal",
+    "target": "base:coal[default]",
+    "modern": "minecraft:block_of_coal"
+  },
+  "174": {
+    "name": "Packed Ice",
+    "target": "base:ice[default]",
+    "modern": "minecraft:packed_ice"
+  },
+  "175": {
+    "name": "Double Tall Plant",
+    "target": "base:grass_blades_lux[default]",
+    "modern": "minecraft:sunflower",
+    "data_modern": {
+      "0": "minecraft:sunflower",
+      "1": "minecraft:lilac",
+      "2": "minecraft:tall_grass",
+      "3": "minecraft:large_fern",
+      "4": "minecraft:rose_bush",
+      "5": "minecraft:peony"
+    }
+  },
+  "188": {
+    "name": "Spruce Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:spruce_fence"
+  },
+  "189": {
+    "name": "Birch Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:birch_fence"
+  },
+  "190": {
+    "name": "Jungle Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:jungle_fence"
+  },
+  "191": {
+    "name": "Dark Oak Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:dark_oak_fence"
+  },
+  "192": {
+    "name": "Acacia Fence",
+    "target": "base:wood_planks[default]",
+    "modern": "minecraft:acacia_fence"
+  },
+  "193": {
+    "name": "Spruce Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:spruce_door"
+  },
+  "194": {
+    "name": "Birch Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:birch_door"
+  },
+  "195": {
+    "name": "Jungle Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:jungle_door"
+  },
+  "196": {
+    "name": "Acacia Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:acacia_door"
+  },
+  "197": {
+    "name": "Dark Oak Door",
+    "target": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+    "data": {
+      "0": "base:wood_door[direction=NegX,part=bottom,power=off]",
+      "1": "base:wood_door[direction=NegZ,part=bottom,power=off]",
+      "2": "base:wood_door[direction=PosX,part=bottom,power=off]",
+      "3": "base:wood_door[direction=PosZ,part=bottom,power=off]",
+      "4": "base:wood_door[direction=NegX,part=bottom,power=on]",
+      "5": "base:wood_door[direction=NegZ,part=bottom,power=on]",
+      "6": "base:wood_door[direction=PosX,part=bottom,power=on]",
+      "7": "base:wood_door[direction=PosZ,part=bottom,power=on]",
+      "8": "base:wood_door[direction=NegX,part=top,power=off]",
+      "9": "base:wood_door[direction=NegZ,part=top,power=off]",
+      "10": "base:wood_door[direction=PosX,part=top,power=off]",
+      "11": "base:wood_door[direction=PosZ,part=top,power=off]",
+      "12": "base:wood_door[direction=NegX,part=top,power=on]",
+      "13": "base:wood_door[direction=NegZ,part=top,power=on]",
+      "14": "base:wood_door[direction=PosX,part=top,power=on]",
+      "15": "base:wood_door[direction=PosZ,part=top,power=on]"
+    },
+    "modern": "minecraft:dark_oak_door"
+  },
+  "207": {
+    "name": "Beetroots",
+    "target": "base:maize[type=farm,growth=0,part=bottom]",
+    "modern": "minecraft:beetroots"
+  },
+  "208": {
+    "name": "Grass Path",
+    "target": "base:dirt[default]",
+    "modern": "minecraft:dirt_path"
+  },
+  "213": {
+    "name": "Magma Block",
+    "target": "base:magma[default]",
+    "modern": "minecraft:magma_block"
+  },
+  "251": {
+    "name": "Concrete",
+    "target": "base:plastic_block[default]",
+    "modern": "minecraft:white_concrete",
+    "data_modern": {
+      "0": "minecraft:white_concrete",
+      "1": "minecraft:orange_concrete",
+      "2": "minecraft:magenta_concrete",
+      "3": "minecraft:light_blue_concrete",
+      "4": "minecraft:yellow_concrete",
+      "5": "minecraft:lime_concrete",
+      "6": "minecraft:pink_concrete",
+      "7": "minecraft:gray_concrete",
+      "8": "minecraft:light_gray_concrete",
+      "9": "minecraft:cyan_concrete",
+      "10": "minecraft:purple_concrete",
+      "11": "minecraft:blue_concrete",
+      "12": "minecraft:brown_concrete",
+      "13": "minecraft:green_concrete",
+      "14": "minecraft:red_concrete",
+      "15": "minecraft:black_concrete"
+    }
+  },
+  "252": {
+    "name": "Concrete Powder",
+    "target": "base:sand[default]",
+    "modern": "minecraft:white_concrete_powder",
+    "data_modern": {
+      "0": "minecraft:white_concrete_powder",
+      "1": "minecraft:orange_concrete_powder",
+      "2": "minecraft:magenta_concrete_powder",
+      "3": "minecraft:light_blue_concrete_powder",
+      "4": "minecraft:yellow_concrete_powder",
+      "5": "minecraft:lime_concrete_powder",
+      "6": "minecraft:pink_concrete_powder",
+      "7": "minecraft:gray_concrete_powder",
+      "8": "minecraft:light_gray_concrete_powder",
+      "9": "minecraft:cyan_concrete_powder",
+      "10": "minecraft:purple_concrete_powder",
+      "11": "minecraft:blue_concrete_powder",
+      "12": "minecraft:brown_concrete_powder",
+      "13": "minecraft:green_concrete_powder",
+      "14": "minecraft:red_concrete_powder",
+      "15": "minecraft:black_concrete_powder"
+    }
+  },
+  "256": {
+    "name": "Iron Shovel",
+    "target": "base:shovel_iron",
+    "modern": "minecraft:iron_shovel"
+  },
+  "257": {
+    "name": "Iron Pickaxe",
+    "target": "base:pickaxe_iron",
+    "modern": "minecraft:iron_pickaxe"
+  },
+  "258": {
+    "name": "Iron Axe",
+    "target": "base:axe_iron",
+    "modern": "minecraft:iron_axe"
+  },
+  "259": {
+    "name": "Flint and Steel",
+    "target": "minecraft:flint_and_steel[default]",
+    "modern": "minecraft:flint_and_steel"
+  },
+  "260": {
+    "name": "Apple",
+    "target": "minecraft:apple[default]",
+    "modern": "minecraft:apple"
+  },
+  "261": {
+    "name": "Bow",
+    "target": "base:laser_gun",
+    "modern": "minecraft:bow"
+  },
+  "262": {
+    "name": "Arrow",
+    "target": "base:rotor_blades",
+    "modern": "minecraft:arrow"
+  },
+  "263": {
+    "name": "Coal",
+    "target": "base:coal[default]",
+    "modern": "minecraft:coal"
+  },
+  "264": {
+    "name": "Diamond",
+    "target": "base:ruby",
+    "modern": "minecraft:diamond"
+  },
+  "265": {
+    "name": "Iron Ingot",
+    "target": "base:ingot_iron",
+    "modern": "minecraft:iron_ingot"
+  },
+  "266": {
+    "name": "Gold Ingot",
+    "target": "base:ingot_gold",
+    "modern": "minecraft:gold_ingot"
+  },
+  "267": {
+    "name": "Iron Sword",
+    "target": "base:crowbar",
+    "modern": "minecraft:iron_sword"
+  },
+  "268": {
+    "name": "Wooden Sword",
+    "target": "base:crowbar",
+    "modern": "minecraft:wooden_sword"
+  },
+  "269": {
+    "name": "Wooden Shovel",
+    "target": "base:shovel_stone",
+    "modern": "minecraft:wooden_shovel"
+  },
+  "270": {
+    "name": "Wooden Pickaxe",
+    "target": "base:pickaxe_stone",
+    "modern": "minecraft:wooden_pickaxe"
+  },
+  "271": {
+    "name": "Wooden Axe",
+    "target": "base:axe_stone",
+    "modern": "minecraft:wooden_axe"
+  },
+  "272": {
+    "name": "Stone Sword",
+    "target": "base:crowbar",
+    "modern": "minecraft:stone_sword"
+  },
+  "273": {
+    "name": "Stone Shovel",
+    "target": "base:shovel_stone",
+    "modern": "minecraft:stone_shovel"
+  },
+  "274": {
+    "name": "Stone Pickaxe",
+    "target": "base:pickaxe_stone",
+    "modern": "minecraft:stone_pickaxe"
+  },
+  "275": {
+    "name": "Stone Axe",
+    "target": "base:axe_stone",
+    "modern": "minecraft:stone_axe"
+  },
+  "276": {
+    "name": "Diamond Sword",
+    "target": "base:crowbar",
+    "modern": "minecraft:diamond_sword"
+  },
+  "277": {
+    "name": "Diamond Shovel",
+    "target": "base:shovel_aluminium",
+    "modern": "minecraft:diamond_shovel"
+  },
+  "278": {
+    "name": "Diamond Pickaxe",
+    "target": "base:pickaxe_aluminium",
+    "modern": "minecraft:diamond_pickaxe"
+  },
+  "279": {
+    "name": "Diamond Axe",
+    "target": "base:axe_aluminium",
+    "modern": "minecraft:diamond_axe"
+  },
+  "280": {
+    "name": "Stick",
+    "target": "base:stick",
+    "modern": "minecraft:stick"
+  },
+  "281": {
+    "name": "Bowl",
+    "target": "minecraft:bowl[default]",
+    "modern": "minecraft:bowl"
+  },
+  "282": {
+    "name": "Mushroom Stew",
+    "target": "minecraft:mushroom_stew[default]",
+    "modern": "minecraft:mushroom_stew"
+  },
+  "283": {
+    "name": "Golden Sword",
+    "target": "base:crowbar",
+    "modern": "minecraft:golden_sword"
+  },
+  "284": {
+    "name": "Golden Shovel",
+    "target": "minecraft:golden_shovel[default]",
+    "modern": "minecraft:golden_shovel"
+  },
+  "285": {
+    "name": "Golden Pickaxe",
+    "target": "minecraft:golden_pickaxe[default]",
+    "modern": "minecraft:golden_pickaxe"
+  },
+  "286": {
+    "name": "Golden Axe",
+    "target": "minecraft:golden_axe[default]",
+    "modern": "minecraft:golden_axe"
+  },
+  "287": {
+    "name": "String",
+    "target": "minecraft:string[default]",
+    "modern": "minecraft:string"
+  },
+  "288": {
+    "name": "Feather",
+    "target": "minecraft:feather[default]",
+    "modern": "minecraft:feather"
+  },
+  "289": {
+    "name": "Gunpowder",
+    "target": "base:sulfur",
+    "modern": "minecraft:gunpowder"
+  },
+  "290": {
+    "name": "Wooden Hoe",
+    "target": "minecraft:wooden_hoe[default]",
+    "modern": "minecraft:wooden_hoe"
+  },
+  "291": {
+    "name": "Stone Hoe",
+    "target": "minecraft:stone_hoe[default]",
+    "modern": "minecraft:stone_hoe"
+  },
+  "292": {
+    "name": "Iron Hoe",
+    "target": "minecraft:iron_hoe[default]",
+    "modern": "minecraft:iron_hoe"
+  },
+  "293": {
+    "name": "Diamond Hoe",
+    "target": "minecraft:diamond_hoe[default]",
+    "modern": "minecraft:diamond_hoe"
+  },
+  "294": {
+    "name": "Golden Hoe",
+    "target": "minecraft:golden_hoe[default]",
+    "modern": "minecraft:golden_hoe"
+  },
+  "295": {
+    "name": "Wheat Seeds",
+    "target": "base:corn_kernels",
+    "modern": "minecraft:wheat_seeds"
+  },
+  "296": {
+    "name": "Wheat",
+    "target": "base:corn",
+    "modern": "minecraft:wheat"
+  },
+  "297": {
+    "name": "Bread",
+    "target": "minecraft:bread[default]",
+    "modern": "minecraft:bread"
+  },
+  "298": {
+    "name": "Leather Helmet",
+    "target": "base:santa_hat",
+    "modern": "minecraft:leather_helmet"
+  },
+  "299": {
+    "name": "Leather Chestplate",
+    "target": "minecraft:leather_chestplate[default]",
+    "modern": "minecraft:leather_chestplate"
+  },
+  "300": {
+    "name": "Leather Leggings",
+    "target": "minecraft:leather_leggings[default]",
+    "modern": "minecraft:leather_leggings"
+  },
+  "301": {
+    "name": "Leather Boots",
+    "target": "minecraft:leather_boots[default]",
+    "modern": "minecraft:leather_boots"
+  },
+  "302": {
+    "name": "Chainmail Helmet",
+    "target": "base:santa_hat",
+    "modern": "minecraft:chainmail_helmet"
+  },
+  "303": {
+    "name": "Chainmail Chestplate",
+    "target": "minecraft:chainmail_chestplate[default]",
+    "modern": "minecraft:chainmail_chestplate"
+  },
+  "304": {
+    "name": "Chainmail Leggings",
+    "target": "minecraft:chainmail_leggings[default]",
+    "modern": "minecraft:chainmail_leggings"
+  },
+  "305": {
+    "name": "Chainmail Boots",
+    "target": "minecraft:chainmail_boots[default]",
+    "modern": "minecraft:chainmail_boots"
+  },
+  "306": {
+    "name": "Iron Helmet",
+    "target": "base:santa_hat",
+    "modern": "minecraft:iron_helmet"
+  },
+  "307": {
+    "name": "Iron Chestplate",
+    "target": "minecraft:iron_chestplate[default]",
+    "modern": "minecraft:iron_chestplate"
+  },
+  "308": {
+    "name": "Iron Leggings",
+    "target": "minecraft:iron_leggings[default]",
+    "modern": "minecraft:iron_leggings"
+  },
+  "309": {
+    "name": "Iron Boots",
+    "target": "minecraft:iron_boots[default]",
+    "modern": "minecraft:iron_boots"
+  },
+  "310": {
+    "name": "Diamond Helmet",
+    "target": "base:santa_hat",
+    "modern": "minecraft:diamond_helmet"
+  },
+  "311": {
+    "name": "Diamond Chestplate",
+    "target": "minecraft:diamond_chestplate[default]",
+    "modern": "minecraft:diamond_chestplate"
+  },
+  "312": {
+    "name": "Diamond Leggings",
+    "target": "minecraft:diamond_leggings[default]",
+    "modern": "minecraft:diamond_leggings"
+  },
+  "313": {
+    "name": "Diamond Boots",
+    "target": "minecraft:diamond_boots[default]",
+    "modern": "minecraft:diamond_boots"
+  },
+  "314": {
+    "name": "Golden Helmet",
+    "target": "base:santa_hat",
+    "modern": "minecraft:golden_helmet"
+  },
+  "315": {
+    "name": "Golden Chestplate",
+    "target": "minecraft:golden_chestplate[default]",
+    "modern": "minecraft:golden_chestplate"
+  },
+  "316": {
+    "name": "Golden Leggings",
+    "target": "minecraft:golden_leggings[default]",
+    "modern": "minecraft:golden_leggings"
+  },
+  "317": {
+    "name": "Golden Boots",
+    "target": "minecraft:golden_boots[default]",
+    "modern": "minecraft:golden_boots"
+  },
+  "318": {
+    "name": "Flint",
+    "target": "minecraft:flint[default]",
+    "modern": "minecraft:flint"
+  },
+  "319": {
+    "name": "Raw Porkchop",
+    "target": "minecraft:porkchop[default]",
+    "modern": "minecraft:raw_porkchop"
+  },
+  "320": {
+    "name": "Cooked Porkchop",
+    "target": "base:steak",
+    "modern": "minecraft:cooked_porkchop"
+  },
+  "321": {
+    "name": "Painting",
+    "target": "minecraft:painting[default]",
+    "modern": "minecraft:painting"
+  },
+  "322": {
+    "name": "Golden Apple",
+    "target": "minecraft:golden_apple[default]",
+    "modern": "minecraft:golden_apple"
+  },
+  "323": {
+    "name": "Sign",
+    "target": "minecraft:standing_sign[default]",
+    "modern": "minecraft:sign"
+  },
+  "324": {
+    "name": "Wooden Door",
+    "target": "base:wood_door[default]",
+    "modern": "minecraft:wooden_door"
+  },
+  "325": {
+    "name": "Bucket",
+    "target": "minecraft:bucket[default]",
+    "modern": "minecraft:bucket"
+  },
+  "326": {
+    "name": "Water Bucket",
+    "target": "minecraft:water_bucket[default]",
+    "modern": "minecraft:water_bucket"
+  },
+  "327": {
+    "name": "Lava Bucket",
+    "target": "minecraft:lava_bucket[default]",
+    "modern": "minecraft:lava_bucket"
+  },
+  "328": {
+    "name": "Minecart",
+    "target": "minecraft:minecart[default]",
+    "modern": "minecraft:minecart"
+  },
+  "329": {
+    "name": "Saddle",
+    "target": "minecraft:saddle[default]",
+    "modern": "minecraft:saddle"
+  },
+  "330": {
+    "name": "Iron Door",
+    "target": "base:door_iron[default]",
+    "modern": "minecraft:iron_door"
+  },
+  "331": {
+    "name": "Redstone",
+    "target": "base:sulfur_crystal",
+    "modern": "minecraft:redstone"
+  },
+  "332": {
+    "name": "Snowball",
+    "target": "base:snow[default]",
+    "modern": "minecraft:snowball"
+  },
+  "333": {
+    "name": "Boat",
+    "target": "minecraft:boat[default]",
+    "modern": "minecraft:boat"
+  },
+  "334": {
+    "name": "Leather",
+    "target": "minecraft:leather[default]",
+    "modern": "minecraft:leather"
+  },
+  "335": {
+    "name": "Milk Bucket",
+    "target": "base:milk_can",
+    "modern": "minecraft:milk_bucket"
+  },
+  "336": {
+    "name": "Clay Brick",
+    "target": "base:bricks[default]",
+    "modern": "minecraft:clay_brick"
+  },
+  "337": {
+    "name": "Clay Balls",
+    "target": "base:clay[default]",
+    "modern": "minecraft:clay_balls"
+  },
+  "338": {
+    "name": "Sugar Canes",
+    "target": "base:leaves[type=permament]",
+    "modern": "minecraft:sugar_canes"
+  },
+  "339": {
+    "name": "Paper",
+    "target": "base:cardboard_sheet",
+    "modern": "minecraft:paper"
+  },
+  "340": {
+    "name": "Book",
+    "target": "minecraft:book[default]",
+    "modern": "minecraft:book"
+  },
+  "341": {
+    "name": "Slimeball",
+    "target": "base:rubber_ball",
+    "modern": "minecraft:slimeball"
+  },
+  "342": {
+    "name": "Minecart with Chest",
+    "target": "minecraft:chest_minecart[default]",
+    "modern": "minecraft:minecart_with_chest"
+  },
+  "343": {
+    "name": "Minecart with Furnace",
+    "target": "minecraft:furnace_minecart[default]",
+    "modern": "minecraft:minecart_with_furnace"
+  },
+  "344": {
+    "name": "Egg",
+    "target": "minecraft:egg[default]",
+    "modern": "minecraft:egg"
+  },
+  "345": {
+    "name": "Compass",
+    "target": "minecraft:compass[default]",
+    "modern": "minecraft:compass"
+  },
+  "346": {
+    "name": "Fishing Rod",
+    "target": "minecraft:fishing_rod[default]",
+    "modern": "minecraft:fishing_rod"
+  },
+  "347": {
+    "name": "Clock",
+    "target": "minecraft:clock[default]",
+    "modern": "minecraft:clock"
+  },
+  "348": {
+    "name": "Glowstone Dust",
+    "target": "minecraft:glowstone_dust[default]",
+    "modern": "minecraft:glowstone_dust"
+  },
+  "349": {
+    "name": "Raw Fish",
+    "target": "minecraft:fish[default]",
+    "modern": "minecraft:raw_fish"
+  },
+  "350": {
+    "name": "Cooked Fish",
+    "target": "minecraft:cooked_fish[default]",
+    "modern": "minecraft:cooked_fish"
+  },
+  "351": {
+    "name": "Dye",
+    "target": "minecraft:dye[default]",
+    "modern": "minecraft:dye"
+  },
+  "352": {
+    "name": "Bone",
+    "target": "minecraft:bone[default]",
+    "modern": "minecraft:bone"
+  },
+  "353": {
+    "name": "Sugar",
+    "target": "base:starch",
+    "modern": "minecraft:sugar"
+  },
+  "354": {
+    "name": "Cake",
+    "target": "base:cheese[default]",
+    "modern": "minecraft:cake"
+  },
+  "355": {
+    "name": "Bed",
+    "target": "base:crate_wooden[default]",
+    "modern": "minecraft:bed"
+  },
+  "356": {
+    "name": "Redstone Repeater",
+    "target": "minecraft:unpowered_repeater[default]",
+    "modern": "minecraft:redstone_repeater"
+  },
+  "357": {
+    "name": "Cookie",
+    "target": "minecraft:cookie[default]",
+    "modern": "minecraft:cookie"
+  },
+  "358": {
+    "name": "Map",
+    "target": "minecraft:map[default]",
+    "modern": "minecraft:map"
+  },
+  "359": {
+    "name": "Shears",
+    "target": "minecraft:shears[default]",
+    "modern": "minecraft:shears"
+  },
+  "360": {
+    "name": "Melon Slice",
+    "target": "minecraft:melon[default]",
+    "modern": "minecraft:melon_slice"
+  },
+  "361": {
+    "name": "Pumpkin Seeds",
+    "target": "base:corn_kernels",
+    "modern": "minecraft:pumpkin_seeds"
+  },
+  "362": {
+    "name": "Melon Seeds",
+    "target": "base:corn_kernels",
+    "modern": "minecraft:melon_seeds"
+  },
+  "363": {
+    "name": "Raw Beef",
+    "target": "minecraft:beef[default]",
+    "modern": "minecraft:raw_beef"
+  },
+  "364": {
+    "name": "Steak",
+    "target": "base:steak",
+    "modern": "minecraft:steak"
+  },
+  "365": {
+    "name": "Raw Chicken",
+    "target": "minecraft:chicken[default]",
+    "modern": "minecraft:raw_chicken"
+  },
+  "366": {
+    "name": "Cooked Chicken",
+    "target": "base:steak",
+    "modern": "minecraft:cooked_chicken"
+  },
+  "367": {
+    "name": "Rotten Flesh",
+    "target": "minecraft:rotten_flesh[default]",
+    "modern": "minecraft:rotten_flesh"
+  },
+  "368": {
+    "name": "Ender Pearl",
+    "target": "minecraft:ender_pearl[default]",
+    "modern": "minecraft:ender_pearl"
+  },
+  "369": {
+    "name": "Blaze Rod",
+    "target": "minecraft:blaze_rod[default]",
+    "modern": "minecraft:blaze_rod"
+  },
+  "370": {
+    "name": "Ghast Tear",
+    "target": "minecraft:ghast_tear[default]",
+    "modern": "minecraft:ghast_tear"
+  },
+  "371": {
+    "name": "Gold Nugget",
+    "target": "minecraft:gold_nugget[default]",
+    "modern": "minecraft:gold_nugget"
+  },
+  "372": {
+    "name": "Nether Wart (Item)",
+    "target": "minecraft:nether_wart[default]",
+    "modern": "minecraft:nether_wart_item"
+  },
+  "373": {
+    "name": "Potion",
+    "target": "minecraft:potion[default]",
+    "modern": "minecraft:potion"
+  },
+  "374": {
+    "name": "Glass Bottle",
+    "target": "minecraft:biofuel",
+    "modern": "minecraft:glass_bottle"
+  },
+  "375": {
+    "name": "Spider Eye",
+    "target": "base:starch",
+    "modern": "minecraft:spider_eye"
+  },
+  "376": {
+    "name": "Fermented Spider Eye",
+    "target": "base:starch_slurry",
+    "modern": "minecraft:fermented_spider_eye"
+  },
+  "377": {
+    "name": "Blaze Powder",
+    "target": "minecraft:blaze_powder[default]",
+    "modern": "minecraft:blaze_powder"
+  },
+  "378": {
+    "name": "Magma Cream",
+    "target": "minecraft:magma_cream[default]",
+    "modern": "minecraft:magma_cream"
+  },
+  "379": {
+    "name": "Brewing Stand (Item)",
+    "target": "minecraft:brewing_stand[default]",
+    "modern": "minecraft:brewing_stand_item"
+  },
+  "380": {
+    "name": "Cauldron (Item)",
+    "target": "minecraft:cauldron[default]",
+    "modern": "minecraft:cauldron_item"
+  },
+  "381": {
+    "name": "Eye of Ender",
+    "target": "minecraft:ender_eye[default]",
+    "modern": "minecraft:eye_of_ender"
+  },
+  "382": {
+    "name": "Glistering Melon",
+    "target": "minecraft:speckled_melon[default]",
+    "modern": "minecraft:glistering_melon"
+  },
+  "383": {
+    "name": "Spawn Egg",
+    "target": "minecraft:spawn_egg[default]",
+    "modern": "minecraft:spawn_egg"
+  },
+  "384": {
+    "name": "Bottle o Enchanting",
+    "target": "minecraft:experience_bottle[default]",
+    "modern": "minecraft:bottle_o_enchanting"
+  },
+  "385": {
+    "name": "Fire Charge",
+    "target": "minecraft:fire_charge[default]",
+    "modern": "minecraft:fire_charge"
+  },
+  "2256": {
+    "name": "13 Disc",
+    "target": "minecraft:record_13[default]",
+    "modern": "minecraft:13_disc"
+  },
+  "2257": {
+    "name": "Cat Disc",
+    "target": "minecraft:record_cat[default]",
+    "modern": "minecraft:cat_disc"
+  }
+}

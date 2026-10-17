@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mc2cr"
+version = "0.1.0"
+description = "Minecraft to Cosmic Reach World Converter"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Cosmic Reach Contributors" }
+]
+keywords = ["minecraft", "cosmic-reach", "voxel", "world-converter"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
+dependencies = [
+    "click>=8.0.0",
+    "numpy>=1.20.0",
+    "isal>=1.8.0",
+    "sv-ttk>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+build = [
+    "pyinstaller>=6.0.0",
+]
+
+[project.scripts]
+mc2cr = "mc2cr.cli:main"
+mc2cr-gui = "mc2cr.gui.app:main"
+
+[tool.setuptools.package-data]
+"mc2cr" = ["mappings/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
