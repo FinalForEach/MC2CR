@@ -105,14 +105,15 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-22.04
             artifact_name: MC2CR-linux
-            src_binary: dist/MC2CR
             dest_binary: dist/MC2CR-linux
           - os: windows-latest
             artifact_name: MC2CR-windows.exe
-            src_binary: dist/MC2CR.exe
             dest_binary: dist/MC2CR-windows.exe
+          - os: macos-latest
+            artifact_name: MC2CR-macos.zip
+            dest_binary: dist/MC2CR-macos.zip
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code at tag
@@ -135,9 +136,18 @@ jobs:
         shell: bash
         run: |
           if [ "${{ runner.os }}" = "Linux" ]; then
-            chmod +x "${{ matrix.src_binary }}"
+            chmod +x dist/MC2CR
+            mv dist/MC2CR dist/MC2CR-linux
+          elif [ "${{ runner.os }}" = "macOS" ]; then
+            if [ -d "dist/MC2CR.app" ]; then
+              (cd dist && zip -r MC2CR-macos.zip MC2CR.app)
+            else
+              chmod +x dist/MC2CR
+              (cd dist && zip -r MC2CR-macos.zip MC2CR)
+            fi
+          elif [ "${{ runner.os }}" = "Windows" ]; then
+            mv dist/MC2CR.exe dist/MC2CR-windows.exe
           fi
-          mv "${{ matrix.src_binary }}" "${{ matrix.dest_binary }}"
 
       - name: Upload temporary workflow artifact
         uses: actions/upload-artifact@v4
