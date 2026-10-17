@@ -17,7 +17,7 @@ from mc2cr.paths import (
 )
 from mc2cr.scanner import MinecraftWorldInfo, inspect_mc_world, scan_mc_worlds
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "convert_mc_world",
