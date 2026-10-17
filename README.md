@@ -4,16 +4,6 @@
 
 ---
 
-## Features
-
-- **Native GUI & CLI**: Launch a platform-native desktop GUI or use a feature-rich command-line tool.
-- **Auto-Detection**: Automatically detects default Minecraft save directories (`%APPDATA%/.minecraft/saves`, `~/.minecraft/saves`) and Cosmic Reach save directories (`%LOCALAPPDATA%/cosmic-reach/worlds`, `~/.local/share/cosmic-reach/worlds`).
-- **High Performance**: Parallel multi-worker chunk conversions and optimized `isal` zlib compression.
-- **Python Library**: Clean, modular API for integration into other Python tools and pipelines.
-- **Standalone Executable**: PyInstaller build script to generate self-contained binaries without requiring a Python installation.
-
----
-
 ## Installation
 
 ### Prerequisites
