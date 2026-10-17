@@ -6,7 +6,7 @@ from mc2cr.scanner import MinecraftWorldInfo, inspect_mc_world, scan_mc_worlds
 
 
 def test_scan_mc_worlds_directory():
-    mc_dir = Path("MC worlds")
+    mc_dir = Path(__file__).parent / "data"
     if not mc_dir.exists():
         return
 
@@ -14,10 +14,10 @@ def test_scan_mc_worlds_directory():
     assert len(worlds) > 0
 
     world_names = [w.folder_name for w in worlds]
-    assert "Release 1.0" in world_names
+    assert "r1.0" in world_names
 
-    r10_info = next(w for w in worlds if w.folder_name == "Release 1.0")
-    assert r10_info.folder_name == "Release 1.0"
+    r10_info = next(w for w in worlds if w.folder_name == "r1.0")
+    assert r10_info.folder_name == "r1.0"
     assert r10_info.display_name != ""
     assert r10_info.region_count > 0
     assert "Release 1.0" in r10_info.display_label

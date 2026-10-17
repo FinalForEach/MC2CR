@@ -3,7 +3,7 @@
 from pathlib import Path
 from mc2cr.minecraft.anvil import AnvilRegionFile
 
-MCA_TEST_FILE = Path(__file__).parent.parent / "MC worlds" / "MC_Release_1_2_5" / "region" / "r.0.0.mca"
+MCA_TEST_FILE = Path(__file__).parent / "data" / "r1.2.5" / "region" / "r.1.1.mca"
 
 
 def test_anvil_region_reading():

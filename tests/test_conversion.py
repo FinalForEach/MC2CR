@@ -7,8 +7,11 @@ from mc2cr.converter import convert_b173_world
 from mc2cr.minecraft.mcregion import McRegionFile
 
 
+DATA_DIR = Path(__file__).parent / "data"
+
+
 def test_read_existing_mcr():
-    mcr_path = Path("MC worlds/1.7.3 world/region/r.0.0.mcr")
+    mcr_path = DATA_DIR / "b1.7.3" / "region" / "r.0.1.mcr"
     if not mcr_path.exists():
         return
     region = McRegionFile(mcr_path)
@@ -19,10 +22,10 @@ def test_read_existing_mcr():
 
 
 def test_convert_b173_world(tmp_path):
-    mc_world = Path("MC worlds/1.7.3 world")
+    mc_world = DATA_DIR / "b1.7.3"
     if not mc_world.exists():
         return
-    out_dir = tmp_path / "1.7.3 world"
+    out_dir = tmp_path / "b1.7.3"
     stats = convert_b173_world(mc_world, out_dir)
 
     assert stats["mc_chunks_converted"] > 0
