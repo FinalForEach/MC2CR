@@ -2,8 +2,10 @@
 
 **MC2CR** is a world converter and Python library for translating Minecraft worlds (Beta 1.7.3 McRegion, Anvil Release 1.0 - 1.13+) into [Cosmic Reach](https://finalforeach.itch.io/cosmic-reach) worlds.
 
-![alt text](gui-screenshot.png)
-![alt text](world-screenshot.png)
+<p align="center">
+  <img src="gui-screenshot.png" alt="MC2CR GUI" /><br><br>
+  <img src="world-screenshot.png" alt="Cosmic Reach World" />
+</p>
 ---
 
 ## Installation
