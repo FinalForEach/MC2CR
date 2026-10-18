@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import multiprocessing
 import sys
 import time
 from pathlib import Path
@@ -23,6 +24,7 @@ from mc2cr.scanner import scan_mc_worlds
 @click.option("--gui", is_flag=True, help="Launch the graphical user interface.")
 def main(ctx: click.Context, gui: bool) -> None:
     """MC2CR: Minecraft to Cosmic Reach World Converter."""
+    multiprocessing.freeze_support()
     if gui or ctx.invoked_subcommand is None:
         if gui:
             from mc2cr.gui.app import main as launch_gui
@@ -201,4 +203,5 @@ def convert(
 
 
 if __name__ == "__main__":
+    multiprocessing.freeze_support()
     main()

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import multiprocessing
 import os
 import queue
 import subprocess
@@ -337,10 +338,12 @@ class MC2CRApp:
 
 def main() -> None:
     """Entry point for the MC2CR GUI application."""
+    multiprocessing.freeze_support()
     root = tk.Tk()
     app = MC2CRApp(root)
     root.mainloop()
 
 
 if __name__ == "__main__":
+    multiprocessing.freeze_support()
     main()
